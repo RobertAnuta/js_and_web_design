@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ohmyfood">
+
+    <title>ohmyfood</title>
+
+    <!-- Font library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!--Link to SCCS-->
+    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+
+    <!-- Favicon Logo-->
+    <link rel="icon" href="../images/logo/ohmyfood.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo header-restaurant box-shadow">
+            <i class="fa-solid fa-arrow-left restaurant-btn_back"></i>
+            <a href="../index.html" class="header-logo_href min-width_395 header-restaurant_logo">
+                <img src="../images/logo/ohmyfood.png" alt="ohmyfood-logo" class="logo">
+            </a>
+        </div>
+    </header>
+    <div class="restaurant-menu_img min-width_395">
+        <img class="restaurant-menu_image" src="../images/restaurants/le-gourmand.jpg" alt="Le Gourmand">
+    </div>
+    <section class="restaurant-section border-top_radious relative-40px">
+        <div class="restaurant-section_name">
+            <div class="restaurant-card_name">Le Gourmand</div>
+            <div class="icon_heart icon_heart_padding ">
+                <i class="fa-regular fa-heart icon_show"></i>
+                <i class="fa-solid fa-heart icon_hide"></i>
+            </div>
+        </div>
+        <div class="restaurant-section_menu">
+            <div class="restaurant-menu-card">
+                <div class="restaurant-menu_element-categorie">ENTREES</div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Tuna Carpaccio</div>
+                        <div class="menu-element_description">Seasoned with yuzu</div>
+                    </div>
+                    <div class="menu-element_price">25€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Crunch Lobster Croquets</div>
+                        <div class="menu-element_description">With seasoned vegetables</div>
+                    </div>
+                    <div class="menu-element_price">35€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Mushrooms soup</div>
+                        <div class="menu-element_description">With truffles</div>
+                    </div>
+                    <div class="menu-element_price">20€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+            </div>
+
+            <div class="restaurant-menu-card">
+                <div class="restaurant-menu_element-categorie">MAIN DISH</div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Roast Chicken with Provincal Herbs</div>
+                        <div class="menu-element_description"> With truffle cream</div>
+                    </div>
+                    <div class="menu-element_price">20€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Roasted Lobster</div>
+                        <div class="menu-element_description">With seasonal vegerables</div>
+                    </div>
+                    <div class="menu-element_price">35€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Angust Beef Ribs</div>
+                        <div class="menu-element_description">With mashed parshnips</div>
+                    </div>
+                    <div class="menu-element_price">44€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+            </div>
+
+            <div class="restaurant-menu-card">
+                <div class="restaurant-menu_element-categorie">DESSERTS</div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Assorted Dessert Plate</div>
+                        <div class="menu-element_description">Chef's choice</div>
+                    </div>
+                    <div class="menu-element_price">18€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Créme brulée</div>
+                        <div class="menu-element_description">Revisted</div>
+                    </div>
+                    <div class="menu-element_price">22€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+                <div class="menu-element">
+                    <div class="menu-element_text">
+                        <div class="menu-element_name">Tiramisu</div>
+                        <div class="menu-element_description">With hazelnuts</div>
+                    </div>
+                    <div class="menu-element_price">23€</div>
+                    <i class="fa-solid fa-circle-check icon_hide icon_tertiary-color"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-order">
+            <button type="submit" formaction="#"
+                class="restaurant-menu_order-btn btn_gradient font_text btn_style btn-order_size">Order</button>
+        </div>
+    </section>
+    <footer>
+        <a href="index.html" class="footer-logo_href">
+            <img src="../images/logo/ohmyfood.png" alt="ohmyfood-logo" class="footer-logo">
+        </a>
+        <ul class="footer-ul min-width_395">
+            <li class="footer-element">
+                <a href="#" class="footer-link"><i class="fa-solid fa-utensils footer-icons"></i>
+                    Suggest a restaurant</a>
+            </li>
+            <li class="footer-element">
+                <a href="#" class="footer-link"><i class="fa-solid fa-handshake-angle footer-icons"></i>
+                    Become a partner
+                </a>
+            </li>
+            <li class="footer-element">
+                <a href="#" class="footer-link">Legal</a>
+            </li>
+            <li class="footer-element">
+                <a href="mailto:contact@ohmyfood.com" class="footer-link">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

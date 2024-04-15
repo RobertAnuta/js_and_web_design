@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ohmyfood">
+
+    <title>ohmyfood</title>
+
+    <!-- Font library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!--Link to SCCS-->
+    <link rel="stylesheet" type="text/css" href="./scss/style.css">
+
+    <!-- Favicon Logo-->
+    <link rel="icon" href="./images/logo/ohmyfood.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="loader">
+        <div id="spin"></div>
+    </div>
+    <header>
+        <div class="header-logo">
+            <a href="index.html" class="header-logo_href min-width_395 box-shadow">
+                <img src="./images/logo/ohmyfood.png" alt="ohmyfood-logo" class="logo">
+            </a>
+        </div>
+        <div class="header-location min-width_395">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <span class="header-location_span">Paris, Belleville</span>
+        </div>
+        <div class="header-text">
+            <ul class="header-text_ul min-width_395">
+                <li class="header-text_menu font_title">Book the menu you like</li>
+                <li class="header-text_description font_text">Discover top-of-the-art restaurants we picked for you
+                </li>
+                <li class="header-btn">
+                    <button type="submit" formaction="#"
+                        class="header-btn_explore btn_gradient font_text btn_style">Explore our
+                        restaurants</button>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav-menu min-width_395">
+        <div class="nav-menu_title">How it works</div>
+        <div class="nav-menu_element">
+            <p class="menu-element_no">1</p>
+            <i class="fa-solid fa-mobile-screen-button header-icons"></i>
+            <p class="menu-element_text">Chose a restaurant</p>
+        </div>
+        <div class="nav-menu_element">
+            <p class="menu-element_no">2</p>
+            <i class="fa-solid fa-list header-icons"></i>
+            <p class="menu-element_text">Create your menu</p>
+        </div>
+        <div class="nav-menu_element">
+            <p class="menu-element_no">3</p>
+            <i class="fa-solid fa-store header-icons"></i>
+            <p class="menu-element_text">Go enjoy it at the restaurant</p>
+        </div>
+    </nav>
+    <section class="section-restaurant min-width_395">
+        <div class="restaurant_text">Restaurants</div>
+        <div class="restaurant-card">
+            <a class="restaurant-image_link" href="./Pages/Menu_palette.html">
+                <img class="restaurant_image" src="./images/restaurants/the-full-palette.jpg" alt="The Full Palette">
+            </a>
+            <button class="btn-new_green btn-new_position-1">New</button>
+            <div class="restaurant-card_bottom">
+                <div class="restaurant-card_text">
+                    <div class="restaurant-card_name">The Full Palette</div>
+                    <div class="restaurant-card_location">New York</div>
+                </div>
+                <div class="icon_heart">
+                    <i class="fa-regular fa-heart icon_show"></i>
+                    <i class="fa-solid fa-heart icon_hide"></i>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a class="restaurant-image_link" href="./Pages/Menu_enchanted.html">
+                <img class="restaurant_image" src="./images/restaurants/the-enchanted-plate.jpg"
+                    alt="The Enchanted Plate">
+            </a>
+            <button class="btn-new_green btn-new_position-2">New</button>
+            <div class="restaurant-card_bottom">
+                <div class="restaurant-card_text">
+                    <div class="restaurant-card_name">The Enchanted Plate</div>
+                    <div class="restaurant-card_location">New York</div>
+                </div>
+                <div class="icon_heart">
+                    <i class="fa-regular fa-heart icon_show"></i>
+                    <i class="fa-solid fa-heart icon_hide"></i>
+                </div>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a class="restaurant-image_link" href="./Pages/Menu_bastille.html">
+                <img class="restaurant_image" src="./images/restaurants/bastille.jpg" alt="Bastille">
+            </a>
+            <div class="restaurant-card_bottom">
+                <div class="restaurant-card_text">
+                    <div class="restaurant-card_name">Bastille</div>
+                    <div class="restaurant-card_location">New York</div>
+                </div>
+                <div class="icon_heart">
+                    <i class="fa-regular fa-heart icon_show"></i>
+                    <i class="fa-solid fa-heart icon_hide"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a class="restaurant-image_link" href="./Pages/Menu_gourmand.html">
+                <img class="restaurant_image" src="./images/restaurants/le-gourmand.jpg" alt="Le Gourmand">
+            </a>
+            <div class="restaurant-card_bottom">
+                <div class="restaurant-card_text">
+                    <div class="restaurant-card_name">Le Gourmand</div>
+                    <div class="restaurant-card_location">New York</div>
+                </div>
+                <div class="icon_heart">
+                    <i class="fa-regular fa-heart icon_show"></i>
+                    <i class="fa-solid fa-heart icon_hide"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="index.html" class="footer-logo_href">
+            <img src="./images/logo/ohmyfood.png" alt="ohmyfood-logo" class="footer-logo">
+        </a>
+        <ul class="footer-ul min-width_395">
+            <li class="footer-element">
+                <a href="#" class="footer-link"><i class="fa-solid fa-utensils footer-icons"></i>
+                    Suggest a restaurant</a>
+            </li>
+            <li class="footer-element">
+                <a href="#" class="footer-link"><i class="fa-solid fa-handshake-angle footer-icons"></i>
+                    Become a partner
+                </a>
+            </li>
+            <li class="footer-element">
+                <a href="#" class="footer-link">Legal</a>
+            </li>
+            <li class="footer-element">
+                <a href="mailto:contact@ohmyfood.com" class="footer-link">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

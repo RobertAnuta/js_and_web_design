@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Shrikhand";
+    src: url("https://fonts.googleapis.com/css?family=Shrikhand");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+$transition-delay: 0.2s;
+$transition-duration: 0.5s;
+$transition-timing: ease-out;
+$primary-color: #9356DC;
+$primary-color_opacity: #e9ddf8;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color_grey: #f7f7f7;
+$background-color_lightgrey: #fafafa;
+$font-title: "Shrikhand", serif;
+$font-text: "Roboto", serif;
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 900
+);
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+$font-size: (
+    "regular": 10px,
+    "medium": 18px,
+    "mid": 22px,
+    "bold": 30px
+);
+
+@function fontsize($size-name) {
+    @return map-get($font-size, $size-name);
+}
+
+// Flex center wrapped
+@mixin flexcenterwrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+// Flex center
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+// Flex wrap
+@mixin flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Flex row
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+// No space around
+@mixin none {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+// Text centered
+@mixin textcenter {
+    margin: auto;
+    text-align: center;
+}
+
+// Li display reset
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
