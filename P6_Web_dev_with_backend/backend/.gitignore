@@ -1,0 +1,4 @@
+/node_modules
+
+# Ignore content of images folder
+/images/*
