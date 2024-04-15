@@ -1,0 +1,74 @@
+@import "../../style.scss";
+
+.navbar {
+  @include themify($themes) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid themed("border");
+    position: sticky;
+    top: 0;
+    background-color: themed("bg");
+    color:themed("textColor");
+    z-index: 999;
+
+   @media (min-width: 451px) and (max-width: 768px)  {
+          justify-content: space-around;
+
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .logo{
+        width: 200px;
+        height: auto;
+      }
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("logo");
+      }
+      .MuiSvgIcon-root {
+        cursor: pointer;
+
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      button {
+        border: none;
+        padding: 5px;
+        color: white;
+        cursor: pointer;
+        background-color: #5271ff;
+        border-radius: 3px;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span {
+        }
+      }
+    }
+  }
+}
